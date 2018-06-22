@@ -4,8 +4,13 @@ import {CommonModule} from '@angular/common';
 import {
 	MatButtonModule,
 	MatCardModule,
+	MatDatepickerModule,
+	MatFormFieldModule,
 	MatIconModule,
+	MatInputModule,
+	MatNativeDateModule,
 	MatSidenavModule,
+	MatTableModule,
 	MatToolbarModule
 } from '@angular/material';
 
@@ -14,18 +19,28 @@ import {
 		BrowserAnimationsModule,
 		CommonModule,
 		MatButtonModule,
+		MatDatepickerModule,
+		MatFormFieldModule,
 		MatCardModule,
 		MatIconModule,
+		MatInputModule,
+		MatNativeDateModule,
 		MatSidenavModule,
+		MatTableModule,
 		MatToolbarModule
 	],
 	declarations: [],
 	exports: [
 		BrowserAnimationsModule,
 		MatButtonModule,
+		MatDatepickerModule,
+		MatFormFieldModule,
 		MatCardModule,
 		MatIconModule,
+		MatInputModule,
+		MatNativeDateModule,
 		MatSidenavModule,
+		MatTableModule,
 		MatToolbarModule
 	]
 })

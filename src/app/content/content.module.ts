@@ -5,6 +5,7 @@ import {SharedModule} from '../shared/shared.module';
 import {HomeComponent} from './home/home.component';
 
 import {ROUTES} from './content.route';
+import { TimeTableComponent } from './time-table/time-table.component';
 
 @NgModule({
 	imports: [
@@ -13,6 +14,7 @@ import {ROUTES} from './content.route';
 	],
 	declarations: [
 		HomeComponent,
+		TimeTableComponent,
 	],
 	providers: [],
 	exports: [RouterModule]

@@ -1,0 +1,28 @@
+<mat-table #table [dataSource]="dataSource">
+
+	<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+	<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+	<ng-container matColumnDef="column1">
+		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-cell *matCellDef="let element">{{element.task}}</mat-cell>
+	</ng-container>
+
+	<ng-container matColumnDef="column2">
+		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-cell *matCellDef="let element">{{element.project}}</mat-cell>
+	</ng-container>
+
+	<ng-container matColumnDef="column3">
+		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-cell *matCellDef="let element">{{element.initialTime}}</mat-cell>
+	</ng-container>
+
+	<ng-container matColumnDef="column4">
+		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-cell *matCellDef="let element">{{element.finalTime}}</mat-cell>
+	</ng-container>
+
+</mat-table>
+
+<button mat-raised-button (click)="addRow()">Add new entry</button>

@@ -1,16 +1,13 @@
-<ul>
-	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur illo natus! Ad distinctio
-		dolores enim fuga itaque quia rem reprehenderit, sequi veniam vitae. Esse excepturi nam nobis non sed.
-	</li>
-	<li>Blanditiis dolorem eveniet illo iusto libero magnam modi molestias mollitia natus quia? Animi aut est incidunt,
-		iste nihil officiis optio perferendis placeat provident quibusdam quos, saepe ut velit veniam voluptates?
-	</li>
-	<li>Aliquid, aspernatur excepturi exercitationem ipsa molestias provident quisquam sit voluptates! Delectus deserunt
-		eaque fugiat id itaque numquam quia quod ut. Doloribus eligendi eos libero mollitia nihil provident quo sequi
-		suscipit.
-	</li>
-	<li>Consequuntur labore natus nihil nobis porro reprehenderit sunt. Eum eveniet explicabo hic, nulla odio optio quis
-		reiciendis reprehenderit voluptatibus. Accusamus alias animi aspernatur excepturi illum laboriosam magni qui
-		repellendus voluptate.
-	</li>
-</ul>
+<mat-card>
+	<mat-card-content>
+		<div class="row">
+			<mat-form-field>
+				<mat-placeholder>Choose a date</mat-placeholder>
+				<input matInput [matDatepicker]="picker">
+				<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+				<mat-datepicker #picker></mat-datepicker>
+			</mat-form-field>
+		</div>
+		<time-table></time-table>
+	</mat-card-content>
+</mat-card>
