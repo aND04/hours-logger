@@ -11,7 +11,9 @@ import {ROUTES} from './content.route';
 		RouterModule.forRoot(ROUTES, {useHash: true}),
 		SharedModule,
 	],
-	declarations: [HomeComponent],
+	declarations: [
+		HomeComponent,
+	],
 	providers: [],
 	exports: [RouterModule]
 })

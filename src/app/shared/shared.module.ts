@@ -3,7 +3,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
 import {
 	MatButtonModule,
-	MatIconModule
+	MatCardModule,
+	MatIconModule,
+	MatSidenavModule,
+	MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
@@ -11,13 +14,19 @@ import {
 		BrowserAnimationsModule,
 		CommonModule,
 		MatButtonModule,
-		MatIconModule
+		MatCardModule,
+		MatIconModule,
+		MatSidenavModule,
+		MatToolbarModule
 	],
 	declarations: [],
 	exports: [
 		BrowserAnimationsModule,
 		MatButtonModule,
-		MatIconModule
+		MatCardModule,
+		MatIconModule,
+		MatSidenavModule,
+		MatToolbarModule
 	]
 })
 export class SharedModule {
