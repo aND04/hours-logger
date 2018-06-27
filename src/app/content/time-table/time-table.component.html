@@ -4,25 +4,34 @@
 	<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
 
 	<ng-container matColumnDef="column1">
-		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
 		<mat-cell *matCellDef="let element">{{element.task}}</mat-cell>
 	</ng-container>
 
 	<ng-container matColumnDef="column2">
-		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-header-cell *matHeaderCellDef>Project</mat-header-cell>
 		<mat-cell *matCellDef="let element">{{element.project}}</mat-cell>
 	</ng-container>
 
 	<ng-container matColumnDef="column3">
-		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-header-cell *matHeaderCellDef>start</mat-header-cell>
 		<mat-cell *matCellDef="let element">{{element.initialTime}}</mat-cell>
 	</ng-container>
 
 	<ng-container matColumnDef="column4">
-		<mat-header-cell *matHeaderCellDef></mat-header-cell>
+		<mat-header-cell *matHeaderCellDef>end</mat-header-cell>
 		<mat-cell *matCellDef="let element">{{element.finalTime}}</mat-cell>
+	</ng-container>
+
+	<ng-container matColumnDef>
+		<mat-header-cell></mat-header-cell>
+		<mat-cell *matCellDef="let element"></mat-cell>
 	</ng-container>
 
 </mat-table>
 
-<button mat-raised-button (click)="addRow()">Add new entry</button>
+<div class="row">
+	<div class="col s12">
+		<button mat-raised-button (click)="addRow()">Add new entry</button>
+	</div>
+</div>
